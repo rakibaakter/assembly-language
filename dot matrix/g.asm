@@ -1,0 +1,100 @@
+===================================
+A SEGMENT PARA PUBLIC 'CODE'
+ASSUME CS: A
+ORG 1000H
+
+S:
+MOV AL, 80H
+OUT 1EH, AL
+
+B:
+MOV AL, 00H
+OUT 1CH, AL
+MOV AL, 0FFH
+OUT 18H, AL
+OUT 1BH, AL
+
+C:
+
+;FOR ROW 1
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 07FH
+OUT 1AH, AL
+
+MOV AL, 01EH
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+;FOR ROW 2
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 0BFH
+OUT 1AH, AL
+
+MOV AL, 022H
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+;FOR ROW 3
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 0DFH
+OUT 1AH, AL
+
+MOV AL, 02H
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+;FOR ROW 4
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 0EFH
+OUT 1AH, AL
+
+MOV AL, 03AH
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+;FOR ROW 5
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 0F7H
+OUT 1AH, AL
+
+MOV AL, 022H
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+;FOR ROW 6
+MOV AL, 0FFH
+OUT 18H, AL
+
+MOV AL, 0FBH
+OUT 1AH, AL
+
+MOV AL, 03EH
+OUT 1CH, AL
+
+MOV AL, 00H
+OUT 1CH, AL
+;-----------------
+JMP C
+A ENDS
+END
+===================================

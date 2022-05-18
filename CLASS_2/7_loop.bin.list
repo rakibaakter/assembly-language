@@ -1,0 +1,76 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+7_loop.bin -- emu8086 assembler version: 4.08  
+ 
+[ 3/14/2022  --  10:47:11 PM ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       ; Proteus code, 7SD
+[   2]        :                                       CODE SEGMENT
+[   3]        :                                       
+[   4]    0000:                                       START:
+[   5]    0000: B0 80                                 MOV AL, 080H
+[   6]    0002: E6 F6                                 OUT 0F6H, AL ; CR REGISTER ADDRESS = 0F6H, VALUE = 080H
+[   7]        :                                       
+[   8]    0004:                                       X:
+[   9]    0004: B0 E0                                 MOV AL, 0E0H ;DISPLAYING 'J'
+[  10]    0006: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  11]        :                                       
+[  12]    0008: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  13]    000B: E2 FE                                 L1: LOOP L1
+[  14]        :                                       
+[  15]    000D: B0 90                                 MOV AL, 090H ;DISPLAYING '9'
+[  16]    000F: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  17]        :                                       
+[  18]    0011: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  19]    0014: E2 FE                                 L2: LOOP L2
+[  20]        :                                       
+[  21]    0016: B0 80                                 MOV AL, 080H ;DISPLAYING 'B'
+[  22]    0018: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  23]        :                                       
+[  24]    001A: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  25]    001D: E2 FE                                 L3: LOOP L3
+[  26]        :                                       
+[  27]    001F: B0 FF                                 MOV AL, 0FFH ;DISPLAYING 'OFF'
+[  28]    0021: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  29]        :                                       
+[  30]    0023: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  31]    0026: E2 FE                                 L7: LOOP L7
+[  32]        :                                       
+[  33]    0028: B0 C0                                 MOV AL, 0C0H ;DISPLAYING '0'
+[  34]    002A: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  35]        :                                       
+[  36]    002C: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  37]    002F: E2 FE                                 L4: LOOP L4
+[  38]        :                                       
+[  39]    0031: B0 89                                 MOV AL, 089H ;DISPLAYING 'H'
+[  40]    0033: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  41]        :                                       
+[  42]    0035: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  43]    0038: E2 FE                                 L5: LOOP L5
+[  44]        :                                       
+[  45]    003A: B0 B0                                 MOV AL, 0B0H ;DISPLAYING '3'
+[  46]    003C: E6 F2                                 OUT 0F2H,AL ; PORT B ADDRESS = 0F2H
+[  47]        :                                       
+[  48]    003E: B9 FF FF                              MOV CX, 0FFFFH ;DELAY
+[  49]    0041: E2 FE                                 L6: LOOP L6
+[  50]        :                                       
+[  51]        :                                       
+[  52]        :                                       
+[  53]        :                                       
+[  54]    0043: EB BF                                 JMP X
+[  55]        :                                       
+[  56]        :                                       CODE ENDS
+[  57]        :                                       END
+[  58]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================
